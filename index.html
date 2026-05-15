@@ -129,17 +129,22 @@
                                         type="text"
                                         id="name"
                                         name="name"
-                                        placeholder="Name" />
+                                        placeholder="Name"
+                                        required />
                                 </div>
-                                <label class="touch__label" for="email"
-                                    >Email</label
-                                >
-                                <input
-                                    class="touch__input"
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="Email" />
+
+                                <div class="touch__input-block">
+                                    <label class="touch__label" for="email"
+                                        >Email</label
+                                    >
+                                    <input
+                                        class="touch__input"
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Email"
+                                        required />
+                                </div>
                             </fieldset>
                             <label class="touch__label" for="question"
                                 >Your question</label
@@ -148,7 +153,22 @@
                                 class="touch__textarea"
                                 name="question"
                                 id="question"
-                                placeholder="Question"></textarea>
+                                placeholder="Question"
+                                required></textarea>
+
+                            <label
+                                class="touch__label touch__check-block"
+                                for="checkbox">
+                                <input
+                                    required
+                                    class="touch__checkbox"
+                                    type="checkbox"
+                                    id="checkbox" />
+                                I agree with the <a href="#">terms</a></label
+                            >
+                            <button class="btn-send touch__btn">
+                                Send request
+                            </button>
                         </form>
                     </div>
                 </div>
