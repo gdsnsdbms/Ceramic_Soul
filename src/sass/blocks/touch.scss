@@ -81,6 +81,22 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .touch {
+        &__form {
+            position: relative;
+            width: 300px;
+            padding-left: 24px;
+        }
+        &__vase {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .touch {
         &__img {
@@ -90,29 +106,41 @@
             object-fit: cover;
             box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
         }
-        &__col {
-            padding: 0 10px;
-        }
         &__input {
             &:hover {
                 border: none;
                 outline: 1px solid $dark;
             }
         }
-        &__textarea {
-            &:hover {
-                border: none;
-                outline: 1px solid $dark;
-            }
+        &__form {
+            padding-left: 20px;
         }
     }
 }
 
 @media screen and (min-width: 1920px) {
     .touch {
+        padding-top: 100px;
         &__img {
             width: 100%;
             height: 356px;
+        }
+        &__form {
+            width: auto;
+            padding-left: 143px;
+        }
+        &__fieldset {
+            display: flex;
+            column-gap: 45px;
+        }
+        &__label,
+        &__check-block,
+        &__input,
+        &__textarea {
+            width: 300px;
+        }
+        &__vase {
+            right: 75px;
         }
     }
 }
