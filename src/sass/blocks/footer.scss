@@ -157,3 +157,32 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        .container {
+            grid-template-columns: 3fr;
+            grid-template-rows: 1fr;
+            gap: 160px;
+            justify-content: space-between;
+        }
+        &__news {
+            grid-column: 1;
+        }
+        &__nav {
+            grid-column: 2;
+            width: 428px;
+            height: 118px;
+            margin-top: 50px;
+            gap: 30px;
+            align-content: start;
+            grid-template-rows: 1fr;
+            grid-template-columns: 4fr;
+        }
+        &__social {
+            grid-column: 3;
+            grid-row: 1;
+            margin-top: 50px;
+        }
+    }
+}
