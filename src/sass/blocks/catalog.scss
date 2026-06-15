@@ -123,3 +123,32 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .catalog {
+        &__content {
+            padding: 20px;
+            &-item {
+                gap: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .catalog {
+        &__content {
+            &-item {
+                column-gap: 73px;
+                row-gap: 30px;
+            }
+        }
+        &__card {
+            width: 295px;
+            min-height: 249px;
+        }
+    }
+    .footer {
+        margin-top: 80px;
+    }
+}
