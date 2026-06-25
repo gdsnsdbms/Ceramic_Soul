@@ -1,6 +1,8 @@
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
+import JustValidate from "just-validate";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -63,4 +65,101 @@ try {
 
     // Показываем первый контент при загрузке
     contents.forEach((c, i) => (c.style.display = i === 0 ? "flex" : "none"));
+} catch (e) {}
+
+try {
+    const validator = new JustValidate("form");
+
+    validator
+        .addField("#name", [
+            {
+                rule: "required",
+                errorMessage: " ",
+            },
+            {
+                rule: "minLength",
+                value: 2,
+                errorMessage: "Min 2 char!",
+            },
+        ])
+        .addField("#email", [
+            {
+                rule: "required",
+                errorMessage: " ",
+            },
+            {
+                rule: "email",
+            },
+        ])
+        .addField(
+            "#question",
+            [
+                {
+                    rule: "required",
+                    errorMessage: " ",
+                },
+                {
+                    rule: "minLength",
+                    value: 5,
+                },
+            ],
+            {
+                errorsContainer: document
+                    .querySelector("#question")
+                    .parentElement.querySelector(".error-message"),
+            },
+        )
+        .addField(
+            "#checkbox",
+            [
+                {
+                    rule: "required",
+                },
+            ],
+            {
+                errorsContainer: document
+                    .querySelector("#checkbox")
+                    .parentElement.parentElement.querySelector(
+                        ".checkbox-error-message",
+                    ),
+            },
+        );
+} catch (e) {}
+
+try {
+    const footerValidator = new JustValidate(".footer__form");
+
+    footerValidator
+        .addField(
+            "#footer__email",
+            [
+                {
+                    rule: "required",
+                    errorMessage: " ",
+                },
+                {
+                    rule: "email",
+                },
+            ],
+            {
+                errorsContainer: document
+                    .querySelector("#footer__email")
+                    .parentElement.querySelector(".footer-email-error-message"),
+            },
+        )
+        .addField(
+            "#footer__checkbox",
+            [
+                {
+                    rule: "required",
+                },
+            ],
+            {
+                errorsContainer: document
+                    .querySelector(".footer__input-email")
+                    .parentElement.querySelector(
+                        ".footer-checkbox-error-message",
+                    ),
+            },
+        );
 } catch (e) {}

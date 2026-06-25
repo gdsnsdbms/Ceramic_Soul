@@ -4,6 +4,15 @@
     margin-top: 90px;
     background-color: $dark;
     color: $light;
+    .just-validate-error-field {
+        border-bottom: 1px solid $ui-error;
+        &::placeholder {
+            color: $ui-error;
+        }
+    }
+    .just-validate-error-field.footer__checkbox {
+        outline: none;
+    }
     .container {
         display: grid;
         padding-top: 10px;
@@ -13,18 +22,40 @@
         margin-top: 50px;
         width: 293px;
         gap: 30px;
+        &-text {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
     &__label {
         font-size: 14px;
         color: $ui-active;
     }
     &__input {
-        background: transparent;
-        border: none;
-        height: 15px;
+        display: block;
         width: 293px;
-        margin: 0;
-        padding: 0;
+        padding-bottom: 15px;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        border-bottom: 1px solid $ui-active;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: $ui-active;
+        &::placeholder {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $ui-active;
+        }
+    }
+    &__btn {
+        margin-top: 20px;
     }
     hr {
         margin: 0;
@@ -33,6 +64,11 @@
         display: flex;
         align-items: center;
         margin-top: 20px;
+        color: $light;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
         a {
             color: #a22dc6;
             text-decoration: none;
@@ -43,9 +79,10 @@
         width: 15px;
         height: 15px;
         margin-right: 15px;
-        appearance: none;
+        accent-color: #a22dc6;
         border: solid 1px $light;
         border-radius: 2px;
+        cursor: pointer;
     }
 
     &__nav {

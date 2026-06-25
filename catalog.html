@@ -200,30 +200,32 @@
                     <span class="footer__news-text"
                         >Keep up to date with news and promotions</span
                     >
-                    <div class="footer__input-block">
-                        <label class="footer__label" for="email"
-                            >Enter your e-mail</label
-                        >
-                        <input
-                            class="footer__input"
-                            type="email"
-                            id="email"
-                            name="email"
-                            required />
-                        <hr />
+                    <form class="footer__form" action="#">
+                        <div class="footer__input-email">
+                            <input
+                                placeholder="Enter your e-mail"
+                                class="footer__input"
+                                type="email"
+                                id="footer__email"
+                                name="email"
+                                required />
+                        </div>
+                        <div class="footer-email-error-message"></div>
 
                         <label
                             class="footer__label footer__check-block"
-                            for="checkbox">
+                            for="footer__checkbox">
                             <input
                                 required
                                 class="footer__checkbox"
                                 type="checkbox"
-                                id="checkbox" />
+                                id="footer__checkbox" />
                             I agree with the <a href="#">terms</a></label
                         >
-                    </div>
-                    <button class="btn-submit footer__btn">Submit</button>
+                        <div class="footer-checkbox-error-message"></div>
+
+                        <button class="btn-submit footer__btn">Submit</button>
+                    </form>
                 </div>
 
                 <div class="footer__nav">
