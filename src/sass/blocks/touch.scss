@@ -9,6 +9,12 @@
     .just-validate-error-field.touch__checkbox {
         outline: none;
     }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        -webkit-text-fill-color: $dark;
+        -webkit-box-shadow: 0 0 0px 40rem #fff inset;
+    }
     &__wrapper {
         margin-top: 60px;
     }
@@ -121,6 +127,9 @@
         }
         &__form {
             padding-left: 20px;
+        }
+        &__vase:hover {
+            animation: rotate 2s linear infinite;
         }
     }
 }
