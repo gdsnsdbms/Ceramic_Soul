@@ -17,6 +17,12 @@
         display: grid;
         padding-top: 10px;
     }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        -webkit-text-fill-color: $light;
+        -webkit-box-shadow: 0 0 0px 40rem $dark inset;
+    }
     &__news {
         display: grid;
         margin-top: 50px;
