@@ -28,17 +28,17 @@
                         <nav class="header__menu-nav">
                             <ul>
                                 <li>
-                                    <a href="#" class="header__menu-link"
+                                    <a href="/catalog" class="header__menu-link"
                                         >Catalog</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#" class="header__menu-link"
+                                    <a href="/blog" class="header__menu-link"
                                         >Blog</a
                                     >
                                 </li>
                                 <li>
-                                    <a href="#" class="header__menu-link"
+                                    <a href="/about" class="header__menu-link"
                                         >About</a
                                     >
                                 </li>
@@ -49,25 +49,31 @@
                         <div class="burger">
                             <span></span><span></span><span></span>
                         </div>
-                        <a href="#" class="header__logo"
+                        <a href="/index" class="header__logo"
                             ><img src="/src/logo/logo.png" alt="logo"
                         /></a>
                         <div class="header__icons">
-                            <a href=""><span class="icon-search"></span></a
-                            ><a href=""
+                            <a href="#"><span class="icon-search"></span></a
+                            ><a href="#"
                                 ><span class="icon-shopping-bag"></span
                             ></a>
                         </div>
                     </div>
-                    <ul class="header__nav">
+                    <div class="header__nav">
                         <ul>
                             <li>
-                                <a href="#" class="header__link">Catalog</a>
+                                <a href="/catalog" class="header__link"
+                                    >Catalog</a
+                                >
                             </li>
-                            <li><a href="#" class="header__link">Blog</a></li>
-                            <li><a href="#" class="header__link">About</a></li>
+                            <li>
+                                <a href="/blog" class="header__link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="/about" class="header__link">About</a>
+                            </li>
                         </ul>
-                    </ul>
+                    </div>
                 </div>
 
                 <div class="promo__wrapper">
@@ -190,7 +196,12 @@
                                     class="touch__checkbox"
                                     type="checkbox"
                                     id="checkbox" />
-                                I agree with the <a href="#">terms</a></label
+                                I agree with the
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Terms_of_service"
+                                    title="terms"
+                                    >terms</a
+                                ></label
                             >
                             <div class="checkbox-error-message"></div>
 
@@ -238,8 +249,12 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <button class="icon-left-open works__slider-nav"></button>
-                    <button class="icon-right-open works__slider-nav"></button>
+                    <button
+                        class="icon-left-open works__slider-nav"
+                        title="left_button"></button>
+                    <button
+                        class="icon-right-open works__slider-nav"
+                        title="right_button"></button>
                 </div>
             </div>
         </section>
@@ -272,7 +287,11 @@
                                 class="footer__checkbox"
                                 type="checkbox"
                                 id="footer__checkbox" />
-                            I agree with the <a href="#">terms</a></label
+                            I agree with the
+                            <a
+                                href="https://en.wikipedia.org/wiki/Terms_of_service"
+                                >terms</a
+                            ></label
                         >
                         <div class="footer-checkbox-error-message"></div>
 
@@ -285,10 +304,12 @@
                         <h3 class="title-footer">Discover</h3>
                         <ul class="footer__nav-list">
                             <li>
-                                <a href="#" class="footer__link">About us</a>
+                                <a href="/about" class="footer__link"
+                                    >About us</a
+                                >
                             </li>
                             <li>
-                                <a href="#" class="footer__link">Blog</a>
+                                <a href="/blog" class="footer__link">Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -296,7 +317,9 @@
                         <h3 class="title-footer">Shopping</h3>
                         <ul class="footer__nav-list">
                             <li>
-                                <a href="#" class="footer__link">Catalog</a>
+                                <a href="/catalog" class="footer__link"
+                                    >Catalog</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -304,7 +327,9 @@
                         <h3 class="title-footer">Information</h3>
                         <ul class="footer__nav-list">
                             <li>
-                                <a href="#" class="footer__link"
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Terms_of_service"
+                                    class="footer__link"
                                     >Terms and Conditions</a
                                 >
                             </li>
@@ -315,12 +340,20 @@
                 <div class="footer__social">
                     <h3 class="title-footer">Follow us</h3>
                     <ul>
-                        <li><button class="icon-facebook"></button></li>
                         <li>
-                            <button class="icon-instagram"></button>
+                            <button
+                                class="icon-facebook"
+                                title="icon_facebook"></button>
                         </li>
                         <li>
-                            <button class="icon-pinterest-circled"></button>
+                            <button
+                                class="icon-instagram"
+                                title="icon_instagram"></button>
+                        </li>
+                        <li>
+                            <button
+                                class="icon-pinterest-circled"
+                                title="icon_pinterest"></button>
                         </li>
                     </ul>
                 </div>
